@@ -1,5 +1,5 @@
- /* Global Styles */
- * {
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -73,12 +73,43 @@ header {
 }
 
 .nav-links a:hover {
-    color: #2980b9;
+    color: #f7072fd0;
 }
 
 .active {
-    color: #2980b9;
-    border-bottom: 2px solid #2980b9;
+    color: #f7072fd0;
+    border-bottom: 2px solid #f7072fd0;
+}
+
+/* Responsive Navbar */
+.navbar-toggle {
+    display: none;
+    background-color: #f7072fd0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
 }
 
 /* Hero Section */
@@ -109,7 +140,7 @@ header {
 
 .btn {
     display: inline-block;
-    background-color: #2980b9;
+    background-color: #f7072fd0;
     color: #fff;
     padding: 12px 25px;
     border-radius: 5px;
@@ -212,7 +243,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2980b9;
+    background-color: #f7072fd0;
     color: #fff;
     font-size: 2.5rem;
 }
@@ -252,8 +283,8 @@ header {
 }
 
 .filter-btn.active, .filter-btn:hover {
-    color: #2980b9;
-    border-bottom: 2px solid #2980b9;
+    color: #f7072fd0;
+    border-bottom: 2px solid #f7072fd0;
 }
 
 .portfolio-grid {
@@ -333,7 +364,7 @@ header {
 
 .contact-info h3 {
     font-size: 1.8rem;
-    color: #2c3e50;
+    color: #f7072fd0;
     margin-bottom: 20px;
 }
 
@@ -345,7 +376,7 @@ header {
 
 .info-icon {
     font-size: 1.5rem;
-    color: #2980b9;
+    color: #f7072fd0;
     margin-right: 15px;
     min-width: 24px;
 }
@@ -371,7 +402,7 @@ header {
 
 .form-control:focus {
     outline: none;
-    border-color: #2980b9;
+    border-color: #f7072fd0;
 }
 
 textarea.form-control {
@@ -380,7 +411,7 @@ textarea.form-control {
 }
 
 .submit-btn {
-    background-color: #2980b9;
+    background-color: #f7072fd0;
     color: #fff;
     border: none;
     padding: 12px 25px;
@@ -428,7 +459,7 @@ footer {
     bottom: 0;
     width: 50px;
     height: 2px;
-    background-color: #2980b9;
+    background-color: #f7072fd0;
 }
 
 .footer-links {
@@ -467,7 +498,7 @@ footer {
 }
 
 .social-icon:hover {
-    background-color: #2980b9;
+    background-color: #f7072fd0;
 }
 
 .copyright {
